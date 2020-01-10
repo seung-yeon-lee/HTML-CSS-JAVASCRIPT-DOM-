@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="event.js"></script>    
+</head>
+<body>
+    <nav>
+        <a href="javascript-dom.html"> DOM 프로그래밍 </a>
+        <span>|</span>
+        <a href="event.html"> DOM 이벤트 프로그래밍 </a>
+    </nav>
+    <hr />
+    <section id="section4">
+        <h1>Many Buttons Event Use in Print..</h1>
+        <table border="2" class="notice">
+            <thead>
+                <tr>
+                    <td>번호</td>
+                    <td>제목</td>
+                    <td>작성일</td>
+                    <td>작성자</td>
+                    <td>조회수</td>
+                    <td>관리</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Event Bublling</td>
+                    <td>2020.01-10</td>
+                    <td>Admin</td>
+                    <td>1</td>
+                    <td>
+                        <input class="sel_btn" type="button" value="선택">
+                        <input class="edit_btn" type="button" value="수정">
+                        <input class="del_btn" type="button" value="삭제">
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Event Bublling</td>
+                    <td>2020.01-10</td>
+                    <td>Admin</td>
+                    <td>1</td>
+                    <td>
+                        <input class="sel_btn" type="button" value="선택">
+                        <input class="edit_btn" type="button" value="수정">
+                        <input class="del_btn" type="button" value="삭제">
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Event Bublling</td>
+                    <td>2020.01-10</td>
+                    <td>Admin</td>
+                    <td>1</td>
+                    <td>
+                        <input class="sel_btn" type="button" value="선택">
+                        <input class="edit_btn" type="button" value="수정">
+                        <input class="del_btn" type="button" value="삭제">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <hr />
+    <section id="section3">
+        <h1>이벤트 버블링 멈추기 </h1>
+        <div class="img-list">
+            <img class="img" src="images/img1.jpg" style="height: 50px;" />
+            <img class="img" src="images/img2.jpg" style="height: 50px;" />
+            
+            <input class="add-button" type="button" value="추가" />
+        </div>
+        <div>
+            <img class="current-img" src="images/img1.jpg" style="border:1px solid red;" />
+        </div>
+    </section>
+    <hr />
+
+    <section id="section2">
+        <h1>버블링을 이용한 사용자 이벤트 처리하기 </h1>
+        <div class="img-list">
+            <img class="img" src="images/img1.jpg" style="height: 50px;" />
+            <img class="img" src="images/img2.jpg" style="height: 50px;" />
+            
+        </div>
+        <div>
+            <img class="current-img" src="images/img1.jpg" style="border:1px solid red;" />
+        </div>
+    </section>
+    <hr />
+
+
+    
+    <section id="section1-1">
+        <h1>선택된 레코드 삭제하기:event target</h1>
+        <table border="1" class="notice-list">
+            <thead>
+                <tr>
+                    <td>번호</td>
+                    <td>제목</td>
+                    <td>작성일</td>
+                    <td>작성자</td>
+                    <td>조회수</td>
+                    <td>관리</td>
+                </tr>
+            </thead>
+            <tbody class="Delete">
+                <tr>
+                    <td>1</td>
+                    <td><a href="1">Front-End?</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>2</td>
+                    <td><input type="button" class="del-button" value="삭제" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="2">Back-End?</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>0</td>
+                    <td><input type="button" class="del-button" value="삭제" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="3">FullStack?</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>1</td>
+                    <td><input type="button" class="del-button" value="삭제" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="4">Development..?</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>0</td>
+                    <td><input type="button" class="del-button" value="삭제" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="2">Back-End?</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>0</td>
+                    <td><input type="button" class="del-button" value="삭제" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr />
+    
+    <section id="section1">
+        <h1>Ex 1-선택된 이미지 보여주기:event target </h1>
+        <div class="IMG">
+            <img class="img" src="images/img1.jpg" style="height: 50px;" />
+            <img class="img" src="images/img2.jpg" style="height: 50px;" />
+            
+        </div>
+        <div>
+            <img class="current-img" src="images/img1.jpg" style="border:1px solid red;" />
+        </div>
+    </section>
+    <hr />
+</body>
+</html>
