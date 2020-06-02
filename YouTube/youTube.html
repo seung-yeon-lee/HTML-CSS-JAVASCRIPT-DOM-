@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://font.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/36278007d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>YouTube Mobile</title>
+  </head>
+  <body>
+    <script src="youtube.js" defer></script>
+    <!-- ---------------------------------------Header------------------------------------------>
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="logo_title">YouTube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-info-circle"></i>
+      </div>
+    </header>
+    <!----------------------- Main Video Sections--------------------------------------------------->
+    <section class="player">
+      <video height="300px" controls src="./video/index.mp4"></video>
+    </section>
+    <!--------------------------- Video Infomation Sections-------------------------------------------------->
+    <!----화면이 늘어날 경우 반응형 작업 div-->
+    <div class="infoAndUpNext">
+      <section class="info">
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#HashTags1</li>
+            <li>#HashTags2</li>
+          </ul>
+          <div class="titleBtn">
+            <span class="title clamp"
+              >tiitle & Button Area! | tiitle & Button Areatiitle & Button
+              Area!tiitle & Button Area!tiitl Area!tiitle & Button Area!tiitle &
+              Button Area!tiitle & Button</span
+            >
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">1M views 1 month ago</span>
+        </div>
+        <!------------------------ Action Tag Icons-------------------- -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i>
+              <span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-thumbs-down"></i>
+              <span> 99</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-plus"></i>
+              <span>Save</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-flag"></i>
+              <span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- ------------------ Channel Infomation Bar------------------------ -->
+        <div class="channel">
+          <div class="channel_metadata">
+            <img src="/zz.jpg" alt="" />
+            <div class="info">
+              <span class="name">By Admin</span>
+              <span class="subscribers">1M subcribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subcribe</button>
+        </div>
+      </section>
+      <section class="upNext">
+        <span class="title">다음 동영상</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img src="/zz.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title"
+                >YouTube Clone.. FlexBox and more Data... (Html + Css +
+                Javascript) => React Back = Nodejs Connetting DB...
+              </span>
+              <span class="name">Development By Adimin</span>
+              <span class="views">8K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="/3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title"
+                >Javascript 사용 전 정적인 웹페이지 만들기(반응형)
+                React+Redux+Nodejs+Mysql+RDS로 React Blog 만들어보기
+              </span>
+              <span class="name">Development By Adimin</span>
+              <span class="views">8K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="/zz.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title"
+                >Javascript 사용 전 정적인 웹페이지 만들기(반응형)
+                React+Redux+Nodejs+Mysql+RDS로 React Blog 만들어보기
+              </span>
+              <span class="name">Development By Adimin</span>
+              <span class="views">8K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!----------------------------- UpNext Searching Presentation------------------------------------------>
+  </body>
+</html>
